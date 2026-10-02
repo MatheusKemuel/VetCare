@@ -14,7 +14,7 @@
 
     <header>
         <section class="logo">
-            <a href="">
+            <a href="./index.html">
                 <img src="./assets/LogoVetCare.png" alt="">
             </a>
         </section>
@@ -39,10 +39,10 @@
 
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Veterinários</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Sobre Nós</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/vets.html">Veterinários</a></li>
+                    <li><a href="./pages/services.html">Serviços</a></li>
+                    <li><a href="./pages/abtus.html">Sobre Nós</a></li>
                 </ul>
             </nav>
         </section>
@@ -53,7 +53,7 @@
             <figure>
                 <img src="./assets/hero-home.png" alt="">
                 <article>
-                    <h3>Cuidado especial para seu melhor amigo</h3>
+                    <h2>Cuidado especial para seu melhor amigo</h2>
                     <p>Cuidado veterinário com amor, serviços de bem-estar e cuidado - Tudo em um só lugar</p>
                     <div class="btns">
                         <a href="" class="btn">Agende sua visita</a>
@@ -65,20 +65,28 @@
 
         <section class="cards-hero">
             <article class="card">
-                <img src="./assets/icons/calendar-week.svg" alt="">
-                <p>Agendamento</p>
+                <a href="">
+                    <img src="./assets/icons/calendar-week.svg" alt="">
+                    <p>Agendamento</p>
+                </a>
             </article>
             <article class="card">
-                <img src="./assets/icons/tabler-icon-dog.svg" alt="">
-                <p>Quem somos</p>
+                <a href="">
+                    <img src="./assets/icons/tabler-icon-dog.svg" alt="">
+                    <p>Quem somos</p>
+                </a>
             </article>
             <article class="card">
-                <img src="./assets/icons/tabler-icon-building.svg" alt="">
-                <p>Estrutura</p>
+                <a href="">
+                    <img src="./assets/icons/tabler-icon-building.svg" alt="">
+                    <p>Estrutura</p>
+                </a>
             </article>
             <article class="card">
-                <img src="./assets/icons/tabler-icon-message.svg" alt="">
-                <p>Fale conosco</p>
+                <a href="#contact">
+                    <img src="./assets/icons/tabler-icon-message.svg" alt="">
+                    <p>Fale conosco</p>
+                </a>
             </article>
         </section>
 
@@ -110,22 +118,134 @@
         </section>
 
         <section class="numbers">
+            <div class="dark-overlay"></div>
             <figure>
-                <p class="number-big">35k+</p>
-                <p class="number-small">Atendimentos feitos</p>
+                <div>
+                    <p class="number-big">35k+</p>
+                    <p class="number-small">Atendimentos feitos</p>
+                </div>
             </figure>
             <figure>
-                <p class="number-big">10k+</p>
-                <p class="number-small">Cirurgias realizadas</p>
+                <div>
+
+                    <p class="number-big">10k+</p>
+                    <p class="number-small">Cirurgias realizadas</p>
+                </div>
             </figure>
             <figure>
-                <p class="number-big">18k+</p>
-                <p class="number-small">Pets Felizes</p>
+                <div>
+
+                    <p class="number-big">18k+</p>
+                    <p class="number-small">Pets Felizes</p>
+                </div>
             </figure>
             <figure>
-                <p class="number-big">11k+</p>
-                <p class="number-small">Anos de experiências</p>
+                <div>
+
+                    <p class="number-big">11k+</p>
+                    <p class="number-small">Anos de experiências</p>
+                </div>
             </figure>
+        </section>
+
+        <section class="services">
+            <h2>Alguns de nossos serviços</h2>
+            <div class="service-cards-wrapper">
+                <article>
+                    <img src="./assets/vet-dog.jpg" alt="">
+                    <div class="card-label">
+                        <p>CENTRO DE ESTÉTICA</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/vet-dog2.avif" alt="">
+                    <div class="card-label">
+                        <p>CONSULTAS ESPECIALIZADAS</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/vet-dog3.avif" alt="">
+                    <div class="card-label">
+                        <p>FARMÁCIA</p>
+                    </div>
+                </article>
+            </div>
+            <a href="" class="btn">Ver todos</a>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-left">
+                <h1>Contato</h1>
+                <div class="form-wrapper">
+                    <p>Ainda tem dúvidas? <br>Entre em contato!</p>
+                    <form>
+                        <fieldset>
+                            <div class="inputs-wrapper">
+                                <label for="name">Seu nome</label>
+                                <input type="text" id="name">
+                            </div>
+                            <div class="inputs-wrapper">
+                                <label for="email">Seu E-mail</label>
+                                <input type="email" id="email">
+                            </div>
+                            <div class="inputs-wrapper">
+                                <label for="subject">Assunto</label>
+                                <textarea name="subject" id="subject"></textarea>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <a href="" class="btn">Enviar</a>
+                </div>
+            </div>
+
+            <div class="contact-right">
+                <p>Tire suas dúvidas</p>
+                <h3>Nós ajudamos o seu Pet a continuar felíz!</h3>
+
+                <section class="faq">
+
+                    <details>
+                        <summary>
+                            A consulta custa quanto?
+                            <span class="icon">+</span>
+                        </summary>
+
+                        <div class="answer">
+                            A VetCare disponibiliza 2 (dois) tipos de consultas:
+                            Consulta generalista Consulta especializada Fazemos uma triagem no seu Pet e ele é
+                            direcionado para o atendimento do médico veterinário mais indicado.
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>
+                            Por que não tem os valores dos serviços no site?
+                            <span class="icon">+</span>
+                        </summary>
+
+                        <div class="answer">
+                            Os veterinários geralmente não divulgam publicamente os preços de seus serviços devido a
+                            algumas razões. Primeiro, os preços podem variar dependendo de diversos fatores, tamanho e
+                            tipo do Pet, procedimento específico necessário, condições de saúde, entre outros. Portanto,
+                            é difícil estabelecer um preço fixo que se aplique a todos os casos.
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>
+                            A castração é necessária?
+                            <span class="icon">+</span>
+                        </summary>
+
+                        <div class="answer">
+                            A castração promove a saúde e o bem-estar dos pets, diminui comportamentos indesejáveis,
+                            como agressividade, marcação de território e fugas em busca de parceiros para acasalamento,
+                            ao mesmo tempo em que contribui para um controle populacional responsável.
+                        </div>
+                    </details>
+
+                </section>
+            </div>
         </section>
     </main>
 
