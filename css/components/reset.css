@@ -82,6 +82,13 @@ summary, details {
     font-family: var(--font-body);
 }
 
+.smaller {
+    font-size: 20px;
+}
+
+.white-font {
+    color: white;
+}
 
 .btn {
     background-color: var(--secondary);
