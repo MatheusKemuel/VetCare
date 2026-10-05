@@ -1,0 +1,151 @@
+.secondary-text {
+    color: var(--text-secondary);
+}
+
+.hero figure {
+    height: 500px;
+    position: relative;
+    width: 100vw;
+}
+
+.hero figure img {
+    object-position: left top;
+    object-fit: cover;
+    height: 100%;
+}
+
+.hero figure article {
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.hero figure article p {
+    color: var(--text-secondary);
+    margin-top: 10px;
+}
+
+
+
+
+
+.vets-cards-wrapper {
+    max-width: 1500px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+
+
+
+.vets-card {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 350px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.vets-card figure {
+    width: 160px;
+    height: 175px;
+    border-radius: 50%;
+}
+
+.vets-card figure img {
+    border-radius: 50%;
+}
+
+
+.vet-card-texs {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 500px) {
+    .hero figure article {
+        max-width: 500px;
+        top: 100px;
+    }
+
+    .hero figure article {
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .vets-cards-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero figure article {
+        max-width: 550px;
+    }
+
+    
+
+    .vets-card {
+        flex-direction: row;
+    }
+    .vet-card-texs {
+        width: 200px;
+    }
+}
+
+@media (min-width: 1080px) {
+    .vets-cards-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .vet-card-texs {
+          height: 100%;
+    }
+}
+
+@media (min-width: 1250px) {
+    .hero figure article {
+        max-width: 600px;
+        left: 100px;
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    .vets-card {
+        max-width: 450px;
+    }
+}
+
+
+@media (min-width: 1500px) {
+    .hero figure img {
+        object-position: 50% 30%;
+    }
+
+}
