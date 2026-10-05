@@ -86,6 +86,10 @@ summary, details {
     font-size: 20px;
 }
 
+.white-font {
+    color: white;
+}
+
 .btn {
     background-color: var(--secondary);
     color: var(--primary-light);
