@@ -50,16 +50,20 @@
     padding: 20px 10px;
     border-radius: 10px;
     margin: 0 auto;
+
 }
 
 .vets-card figure {
     width: 160px;
-    height: 175px;
+    height: 160px;
     border-radius: 50%;
+    border: 3px solid var(--secondary);
 }
 
 .vets-card figure img {
     border-radius: 50%;
+    width: 160px;
+    height: 160px;
 }
 
 
@@ -69,7 +73,7 @@
     flex-direction: column;
     gap: 10px;
     justify-content: space-around;
-  
+
 }
 
 
@@ -107,11 +111,11 @@
         max-width: 550px;
     }
 
-    
-
     .vets-card {
         flex-direction: row;
+        align-items: start;
     }
+
     .vet-card-texs {
         width: 200px;
     }
@@ -121,8 +125,9 @@
     .vets-cards-wrapper {
         grid-template-columns: repeat(3, 1fr);
     }
+
     .vet-card-texs {
-          height: 100%;
+        height: 100%;
     }
 }
 

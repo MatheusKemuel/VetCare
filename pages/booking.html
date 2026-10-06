@@ -7,8 +7,8 @@
     <link rel="icon" type="image/png" href="../assets/Logotipo de Coração Pet Veterinário.png">
     <link rel="stylesheet" href="../css/components/reset.css">
     <link rel="stylesheet" href="../css/components/navbar-footer.css">
-    <link rel="stylesheet" href="../css/vets.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/booking.css">
+    <title>VetCare-Agendamento</title>
 </head>
 
 <body>
@@ -50,103 +50,113 @@
     </header>
 
     <main>
-        <section class="hero">
-            <figure>
-                <img src="../assets/hero-home.png" alt="">
-                <article>
-                    <h2>Nossos Veterinários</h2>
-                    <p>Contamos com uma equipe de profissionais qualificados e apaixonados por animais, prontos para
-                        oferecer o melhor cuidado em todas as fases da vida do seu pet.</p>
-                </article>
-            </figure>
-        </section>
+        <section class="booking ">
+            <div class="form-wrapper">
+                <form action="">
+                    <h3 class="smaller">Preencha o formulário para confirmar o agendamento</h3>
+                    <fieldset>
+                        <div class="input-wrapper">
+                            <label for="name">Nome do tutor:</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="two-inputs">
+                            <div class="input-wrapper">
+                                <label for="pacient">Nome do paciente:</label>
+                                <input type="text" id="pacient">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="time">Horário da visita</label>
+                                <input type="time" id="time">
+                            </div>
+                        </div>
+                        <div class="two-inputs">
+                            <div class="input-wrapper">
+                                <label for="species">Espécie</label>
+                                <input type="text" id="species">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="reason">Motivo da visita</label>
+                                <input type="text" id="reason">
+                                <!-- fazer dropdown -->
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="">Observações(opcional)</label>
+                            <textarea name="" id="" rows="10"></textarea>
+                        </div>
+                    </fieldset>
+                    <a href="./confirmation.html" class="btn">Confirmar agendamento</a>
+                </form>
+            </div>
 
-        <section class="vets-cards-wrapper">
-            <article class="vets-card">
+            <div class="summary" id="vet-rafael">
                 <figure>
                     <img src="../assets/vets/dr-1.avif" alt="">
-                </figure>
-                <div class="vet-card-texs">
                     <h3 class="smaller">Dr. Rafael Costa</h3>
-                    <p class="secondary-text">Médico Veterinário</p>
-                    <p class="secondary-text">CRMS-SP 23456</p>
-                    <p class="secondary-text">7 anos de esperiência</p>
-                    <p>Especialista em cirurgia veterinária, realiza procedimentos com segurança e todo o suporte
-                        necessário para o bem-estar do seu pet.</p>
-                    <a href="./profile.html#vet-rafael" class="btn">Agendar</a>
-                </div>
-            </article>
-            <article class="vets-card">
+                </figure>
+                <hr>
+                <p class="smaller">Endereço:</p>
+                <p class="secondary-text">VetCare</p>
+                <p class="secondary-text">Bairro: Bairro Fictício - SP</p>
+                <p class="secondary-text">Rua da Saudade - 09 - Q.33</p>
+            </div>
+            <div class="summary" id="vet-mariana">
                 <figure>
                     <img src="../assets/vets/dr-2.avif" alt="">
-                </figure>
-                <div class="vet-card-texs">
                     <h3 class="smaller">Dra. Mariana Alves</h3>
-                    <p class="secondary-text">Médica Veterinário</p>
-                    <p class="secondary-text">CRMS-SP 26436</p>
-                    <p class="secondary-text">4 anos de esperiência</p>
-                    <p>Especialista em clínica geral e cuidados preventivos. Atua com consultas de rotina, vacinação e
-                        acompanhamento da saúde de cães e gatos.</p>
-                    <a href="./profile.html#vet-mariana" class="btn">Agendar</a>
-                </div>
-            </article>
-            <article class="vets-card">
+                </figure>
+                <hr>
+                <p class="smaller">Endereço:</p>
+                <p class="secondary-text">VetCare</p>
+                <p class="secondary-text">Bairro: Bairro Fictício - SP</p>
+                <p class="secondary-text">Rua da Saudade - 09 - Q.33</p>
+            </div>
+            <div class="summary" id="vet-lucas">
                 <figure>
                     <img src="../assets/vets/dr-3.avif" alt="">
-                </figure>
-                <div class="vet-card-texs">
                     <h3 class="smaller">Dr. Lucas Martins</h3>
-                    <p class="secondary-text">Médico Veterinário</p>
-                    <p class="secondary-text">CRMS-SP 23254</p>
-                    <p class="secondary-text">3 anos de esperiência</p>
-                    <p>Veterinário especializado em cirurgia e ortopedia. Dedicado ao tratamento de lesões, fraturas e
-                        procedimentos cirúrgicos.</p>
-                    <a href="./profile.html#vet-lucas" class="btn">Agendar</a>
-                </div>
-            </article>
-            <article class="vets-card">
+                </figure>
+                <hr>
+                <p class="smaller">Endereço:</p>
+                <p class="secondary-text">VetCare</p>
+                <p class="secondary-text">Bairro: Bairro Fictício - SP</p>
+                <p class="secondary-text">Rua da Saudade - 09 - Q.33</p>
+            </div>
+            <div class="summary" id="vet-camila">
                 <figure>
                     <img src="../assets/vets/dr-4.avif" alt="">
-                </figure>
-                <div class="vet-card-texs">
                     <h3 class="smaller">Dra. Camila Ferreira</h3>
-                    <p class="secondary-text">Médica Veterinário</p>
-                    <p class="secondary-text">CRMS-SP 23498</p>
-                    <p class="secondary-text">2 anos de esperiência</p>
-                    <p>Especialista em dermatologia veterinária. Cuida de problemas de pele, alergias e doenças
-                        dermatológicas em animais.</p>
-                    <a href="./profile.html#vet-camila" class="btn">Agendar</a>
-                </div>
-            </article>
-            <article class="vets-card">
+                </figure>
+                <hr>
+                <p class="smaller">Endereço:</p>
+                <p class="secondary-text">VetCare</p>
+                <p class="secondary-text">Bairro: Bairro Fictício - SP</p>
+                <p class="secondary-text">Rua da Saudade - 09 - Q.33</p>
+            </div>
+            <div class="summary" id="vet-beatriz">
                 <figure>
                     <img src="../assets/vets/dr-5.avif" alt="">
-                </figure>
-                <div class="vet-card-texs">
                     <h3 class="smaller">Dra. Beatriz Costa</h3>
-                    <p class="secondary-text">Médica Veterinário</p>
-                    <p class="secondary-text">CRMS-SP 52456</p>
-                    <p class="secondary-text">4 anos de esperiência</p>
-                    <p>Especialista em medicina felina. Oferece atendimento personalizado para gatos, com foco em
-                        prevenção e bem-estar.</p>
-                    <a href="./profile.html#vet-beatriz" class="btn">Agendar</a>
-                </div>
-            </article>
-            <article class="vets-card">
+                </figure>
+                <hr>
+                <p class="smaller">Endereço:</p>
+                <p class="secondary-text">VetCare</p>
+                <p class="secondary-text">Bairro: Bairro Fictício - SP</p>
+                <p class="secondary-text">Rua da Saudade - 09 - Q.33</p>
+            </div>
+            <div class="summary" id="vet-juliana">
                 <figure>
                     <img src="../assets/vets/dr-6.avif" alt="">
-                </figure>
-                <div class="vet-card-texs">
                     <h3 class="smaller">Dra. Juliana Mendes</h3>
-                    <p class="secondary-text">Médica Veterinário</p>
-                    <p class="secondary-text">CRMS-SP 23656</p>
-                    <p class="secondary-text">6 anos de esperiência</p>
-                    <p>Especialista em nutrição veterinária. Atua na elaboração de dietas personalizadas e no
-                        acompanhamento nutricional para promover a saúde e a qualidade de vida dos pets.</p>
-                    <a href="./profile.html#vet-juliana" class="btn">Agendar</a>
-                </div>
-            </article>
+                </figure>
+                <hr>
+                <p class="smaller">Endereço:</p>
+                <p class="secondary-text">VetCare</p>
+                <p class="secondary-text">Bairro: Bairro Fictício - SP</p>
+                <p class="secondary-text">Rua da Saudade - 09 - Q.33</p>
+            </div>
         </section>
+
     </main>
 
     <footer>
@@ -174,6 +184,7 @@
             <p>VetCare © 2026 todos os direitos reservados</p>
         </section>
     </footer>
+
 </body>
 
 </html>
