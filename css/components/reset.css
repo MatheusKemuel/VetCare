@@ -16,7 +16,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    scrollbar-width: none; 
+    scrollbar-width: none;
     overflow-x: hidden;
 }
 
@@ -78,7 +78,8 @@ label {
     font-family: var(--font-body);
 }
 
-summary, details {
+summary,
+details {
     font-family: var(--font-body);
 }
 
@@ -88,6 +89,10 @@ summary, details {
 
 .white-font {
     color: white;
+}
+
+.secondary-text {
+    color: var(--text-secondary);
 }
 
 .btn {
