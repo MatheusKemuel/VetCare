@@ -1,3 +1,8 @@
+.bigger {
+    font-size: 32px;
+    color: var(--text);
+}
+
 .hero {
     max-width: 1500px;
     margin: 30px auto;
@@ -161,6 +166,8 @@
 .bot-section {
     max-width: 1500px;
     margin: 30px auto;
+padding: 10px 20px;
+
 }
 
 .bot-texts {
@@ -183,11 +190,18 @@
     display: flex;
     gap: 10px;
     max-width: 300px;
+    margin: 0 auto;
 }
 
 .bot-cards article img {
     width: 24px;
     height: 24px;
+}
+
+.btn {
+    width: 80%;
+    margin: 15px auto;
+    height: 70px;
 }
 
 @media (min-width: 580px) {
@@ -207,20 +221,32 @@
         gap: 20px;
         padding: 10px;
     }
+
+    .hero-texts {
+        justify-content: center;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .hero figure {
+        width: 100%;
+    }
 }
 
 @media (min-width: 1024px) {
     .bot-section {
         display: flex;
         gap: 30px;
+        justify-content: center;
     }
 
-    /* .bot-cards {
-    width: 100%;
-   } */
+   .btn {
+    width: 60%;
+   }
 
     .bot-texts {
         width: 40%;
         text-align: start;
+        justify-content: center;
     }
 }
